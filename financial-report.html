@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Spread Love Foundation — Monthly Financial & Impact Report, August 2026"/>
+<title>Spread Love Foundation — Monthly Financial & Impact Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+    :root {
+        --primary: #990011;
+        --primary-light: #c3121e;
+        --text: #1b1c1c;
+        --text-secondary: #5f5e5e;
+        --text-muted: #8a8888;
+        --border: #d4d2d2;
+        --border-light: #ebeaea;
+        --surface: #fafafa;
+        --surface-warm: #fdfcfa;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body {
+        font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background: #e8e6e4;
+        line-height: 1.65;
+        font-size: 11.5pt;
+        padding: 40px 20px;
+    }
+    .page {
+        max-width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        padding: 18mm 22mm 22mm 22mm;
+        position: relative;
+    }
+
+    /* ─── HEADER ─── */
+    .report-header {
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 16px;
+        margin-bottom: 28px;
+    }
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .header-left {
+        flex: 0 0 38%;
+    }
+    .header-center {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-right {
+        flex: 0 0 38%;
+        text-align: right;
+    }
+
+    /* Logo */
+    .logo-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+    .logo-icon {
+        width: 44px; height: 44px;
+        background: var(--primary);
+        border-radius: 8px;
+        display: flex; align-items: center; justify-content: center;
+        color: white;
+    }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .logo-title {
+        font-family: "Crimson Pro", Georgia, serif;
+        font-size: 18pt;
+        font-weight: 700;
+        color: var(--primary);
+        letter-spacing: -0.01em;
+        line-height: 1.1;
+    }
+    .logo-subtitle {
+        font-family: "Inter", system-ui, sans-serif;
+        font-size: 7.5pt;
+        font-weight: 500;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+    }
+    .contact-line {
+        font-family: "Inter", sans-serif;
+        font-size: 8pt;
+        color: var(--text-muted);
+        line-height: 1.7;
+    }
+    .contact-line strong { color: var(--text-secondary); font-weight: 500; }
+
+    /* Left meta */
+    .doc-meta-label {
+        font-family: "Inter", sans-serif;
+        font-size: 7pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--text-muted);
+        margin-bottom: 4px;
+    }
+    .doc-meta-value {
+        font-family: "Crimson Pro", serif;
+        font-size: 12pt;
+        font-weight: 600;
+        color: var(--text);
+        line-height: 1.3;
+    }
+    .doc-meta-value.sm { font-size: 10.5pt; font-weight: 500; }
+    .meta-group { margin-bottom: 14px; }
+    .meta-group:last-child { margin-bottom: 0; }
+
+    /* Right meta */
+    .header-right .doc-meta-label { text-align: right; }
+    .header-right .doc-meta-value { text-align: right; }
+
+    /* Status badge */
+    .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-family: "Inter", sans-serif;
+        font-size: 7.5pt;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #1a7f37;
+        background: #dafbe1;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin-top: 6px;
+    }
+    .status-badge svg { width: 12px; height: 12px; }
+
+    /* ─── BODY ─── */
+    .section-title {
+        font-family: "Inter", sans-serif;
+        font-size: 8pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--primary);
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .report-body p {
+        text-align: justify;
+        margin-bottom: 16px;
+        text-indent: 0;
+        hyphens: auto;
+    }
+    .report-body p:last-of-type { margin-bottom: 0; }
+
+    .highlight {
+        background: linear-gradient(to bottom, transparent 60%, rgba(153,0,17,0.08) 60%);
+        padding: 0 2px;
+        font-weight: 600;
+    }
+    .highlight-num {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 10.5pt;
+    }
+
+    /* ─── BREAKDOWN TABLE ─── */
+    .breakdown-wrap {
+        margin: 20px 0 24px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .breakdown-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Inter", sans-serif;
+        font-size: 9pt;
+    }
+    .breakdown-table thead {
+        background: var(--surface);
+    }
+    .breakdown-table th {
+        text-align: left;
+        padding: 10px 14px;
+        font-weight: 600;
+        font-size: 7.5pt;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-secondary);
+        border-bottom: 1px solid var(--border);
+    }
+    .breakdown-table td {
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--border-light);
+        vertical-align: top;
+    }
+    .breakdown-table tr:last-child td { border-bottom: none; }
+    .breakdown-table .cat-name {
+        font-weight: 600;
+        color: var(--text);
+    }
+    .breakdown-table .cat-desc {
+        font-size: 8pt;
+        color: var(--text-muted);
+        margin-top: 2px;
+    }
+    .breakdown-table .amount {
+        font-weight: 700;
+        color: var(--text);
+        text-align: right;
+        white-space: nowrap;
+    }
+    .breakdown-table .pct {
+        font-size: 8pt;
+        color: var(--text-muted);
+        text-align: right;
+    }
+    .breakdown-table .total-row {
+        background: var(--surface-warm);
+    }
+    .breakdown-table .total-row td {
+        font-weight: 700;
+        color: var(--primary);
+        border-top: 2px solid var(--primary);
+        border-bottom: none;
+    }
+    .breakdown-table .total-row .amount {
+        color: var(--primary);
+        font-size: 10pt;
+    }
+
+    /* ─── INFO BOX ─── */
+    .info-box {
+        background: var(--surface-warm);
+        border-left: 3px solid var(--primary);
+        padding: 14px 18px;
+        margin: 20px 0;
+        border-radius: 0 6px 6px 0;
+    }
+    .info-box p {
+        font-family: "Inter", sans-serif;
+        font-size: 9pt;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin: 0 !important;
+    }
+    .info-box strong { color: var(--text); }
+
+    /* ─── VERIFICATION BLOCK ─── */
+    .verification-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 36px;
+        padding-top: 28px;
+        border-top: 1px solid var(--border);
+        gap: 32px;
+    }
+    .tampon-area {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .tampon-seal {
+        width: 76px; height: 76px;
+        border: 2.5px solid var(--primary);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-shrink: 0;
+        position: relative;
+    }
+    .tampon-seal::before {
+        content: "";
+        position: absolute;
+        inset: 4px;
+        border: 1px dashed var(--primary-light);
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+    .tampon-seal svg { width: 20px; height: 20px; color: var(--primary); margin-bottom: 2px; }
+    .tampon-seal span {
+        font-family: "Inter", sans-serif;
+        font-size: 6pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--primary);
+        line-height: 1.2;
+    }
+    .tampon-text {
+        font-family: "Inter", sans-serif;
+        font-size: 8pt;
+        color: var(--text-muted);
+        line-height: 1.7;
+        max-width: 260px;
+    }
+    .tampon-text strong { color: var(--text-secondary); font-weight: 600; }
+
+    /* Signature */
+    .signature-block {
+        text-align: right;
+        flex-shrink: 0;
+    }
+    .signature-line {
+        font-family: "Crimson Pro", serif;
+        font-size: 20pt;
+        font-style: italic;
+        font-weight: 500;
+        color: var(--text);
+        line-height: 1;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border);
+        display: inline-block;
+    }
+    .signature-name {
+        font-family: "Inter", sans-serif;
+        font-size: 9.5pt;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 2px;
+    }
+    .signature-role {
+        font-family: "Inter", sans-serif;
+        font-size: 8pt;
+        color: var(--text-muted);
+    }
+    .signature-date {
+        font-family: "Inter", sans-serif;
+        font-size: 7.5pt;
+        color: var(--text-muted);
+        margin-top: 4px;
+    }
+
+    /* ─── FOOTER ─── */
+    .report-footer {
+        margin-top: 32px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border-light);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-left {
+        font-family: "Inter", sans-serif;
+        font-size: 7pt;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .footer-right {
+        font-family: "Inter", sans-serif;
+        font-size: 7pt;
+        color: var(--text-muted);
+    }
+    .footer-right strong { color: var(--text-secondary); font-weight: 600; }
+
+    /* ─── PRINT / PDF ─── */
+    @media print {
+        body {
+            background: white;
+            padding: 0;
+        }
+        .page {
+            box-shadow: none;
+            max-width: 100%;
+            padding: 15mm 18mm 18mm 18mm;
+        }
+    }
+    @page {
+        size: A4;
+        margin: 15mm 18mm 18mm 18mm;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 700px) {
+        body { padding: 12px; font-size: 10.5pt; }
+        .page { padding: 14mm 16mm 18mm 16mm; }
+        .header-top { flex-direction: column; align-items: center; gap: 16px; }
+        .header-left, .header-right { width: 100%; text-align: center; }
+        .header-right .doc-meta-label, .header-right .doc-meta-value { text-align: center; }
+        .header-left .doc-meta-label, .header-left .doc-meta-value { text-align: center; }
+        .verification-block { flex-direction: column; align-items: center; text-align: center; gap: 24px; }
+        .tampon-area { flex-direction: column; }
+        .signature-block { text-align: center; }
+        .breakdown-table { font-size: 8pt; }
+        .breakdown-table th, .breakdown-table td { padding: 8px 10px; }
+    }
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<div class="page">
+
+<!-- ════════════════════════════════════════
+     HEADER
+     ════════════════════════════════════════ -->
+<header class="report-header">
+    <div class="header-top">
+        <!-- LEFT: Date & Title -->
+        <div class="header-left">
+            <div class="meta-group">
+                <div class="doc-meta-label">Report Date</div>
+                <div class="doc-meta-value">August 5, 2026</div>
+            </div>
+            <div class="meta-group">
+                <div class="doc-meta-label">Document</div>
+                <div class="doc-meta-value sm">Monthly Financial &amp; Impact Report</div>
+                <div class="doc-meta-value sm" style="color: var(--text-muted); font-size: 9pt; margin-top: 2px;">Reporting Period: July 1 — July 31, 2026</div>
+            </div>
+            <div class="meta-group">
+                <div class="doc-meta-label">Report Reference</div>
+                <div class="doc-meta-value sm" style="font-family: 'Inter', monospace; font-size: 9pt; letter-spacing: 0.05em;">SLF-RPT-2026-008</div>
+            </div>
+        </div>
+
+        <!-- CENTER: Logo & Contact -->
+        <div class="header-center">
+            <div class="logo-wrap">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                </div>
+                <div class="logo-title">Spread Love Foundation</div>
+                <div class="logo-subtitle">Humanitarian Relief Organization</div>
+            </div>
+            <div style="margin-top: 10px;">
+                <div class="contact-line">
+                    <strong>EIN:</strong> 87-1234567 &nbsp;|&nbsp; <strong>Reg.:</strong> U.S. 501(c)(3) Nonprofit
+                </div>
+                <div class="contact-line">
+                    1420 Mercy Lane, Suite 400 &middot; Washington, DC 20005
+                </div>
+                <div class="contact-line">
+                    <strong>T:</strong> +1 (202) 555-0147 &nbsp;&middot;&nbsp; <strong>E:</strong> reports@spreadlove.org
+                </div>
+                <div class="contact-line">
+                    <strong>W:</strong> www.spreadlove.org &nbsp;&middot;&nbsp; <strong>Transparency Portal:</strong> portal.spreadlove.org
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Director & Details -->
+        <div class="header-right">
+            <div class="meta-group">
+                <div class="doc-meta-label">Prepared By</div>
+                <div class="doc-meta-value">Dr. Amara Khalid</div>
+                <div class="doc-meta-value sm" style="color: var(--text-muted); font-size: 9pt; margin-top: 2px;">Executive Director</div>
+            </div>
+            <div class="meta-group">
+                <div class="doc-meta-label">Field Director</div>
+                <div class="doc-meta-value sm">Omar Hassan</div>
+                <div class="doc-meta-value sm" style="color: var(--text-muted); font-size: 9pt;">Gaza Operations Coordinator</div>
+            </div>
+            <div class="meta-group">
+                <div class="doc-meta-label">Audit Status</div>
+                <div class="status-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                    Independently Verified
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- ════════════════════════════════════════
+     BODY — PARAGRAPH 1
+     Total Collection & Period Overview
+     ════════════════════════════════════════ -->
+<div class="report-body">
+
+    <div class="section-title">I. Total Collection &amp; Allocation Overview</div>
+
+    <p>
+        During the reporting period of <span class="highlight">July 1 to July 31, 2026</span>, the Spread Love Foundation received a total of <span class="highlight-num">$487,350.00</span> in unrestricted and designated donations from <span class="highlight-num">3,842</span> individual donors, <span class="highlight-num">14</span> corporate partners, and <span class="highlight-num">3</span> institutional grants. These funds were collected through our secure online portal, direct bank transfers, cryptocurrency channels, and on-the-ground cash collections coordinated by our regional partners in Amman and Cairo. Every contribution, regardless of size, has been logged, receipted, and allocated in accordance with our mandate of <em>maximum field impact with zero administrative waste</em>.
+    </p>
+
+    <p>
+        The collected sum was deployed across four primary intervention pillars. <strong>Food Security &amp; Nutrition</strong> received the largest allocation at <span class="highlight-num">$182,250</span> (37.4%), funding the procurement, packaging, and last-mile distribution of emergency food parcels, infant formula, and therapeutic nutrition supplements for malnourished children under five. <strong>Emergency Medical Aid</strong> was allocated <span class="highlight-num">$121,840</span> (25.0%), covering surgical instrument kits, trauma dressings, antibiotics, anesthetic supplies, and the operational costs of two mobile clinics serving displaced communities in southern Gaza. <strong>Shelter &amp; Non-Food Items</strong> received <span class="highlight-num">$97,470</span> (20.0%), enabling the construction of weather-resistant temporary shelters and the distribution of thermal blankets, hygiene kits, and solar-powered lighting units. The remaining <span class="highlight-num">$85,790</span> (17.6%) was directed to <strong>Logistics &amp; Operational Support</strong>, including fuel for our fleet of twelve aid trucks, driver per-diems, warehouse rentals in Rafah and Deir al-Balah, communications equipment, and security coordination fees necessary to navigate access corridors safely.
+    </p>
+
+
+<!-- ════════════════════════════════════════
+     BODY — PARAGRAPH 2
+     Detailed Expense Breakdown
+     ════════════════════════════════════════ -->
+    <div class="section-title" style="margin-top: 28px;">II. Detailed Expenditure Breakdown</div>
+
+    <p>
+        The following table presents a line-item breakdown of all expenditures incurred during the reporting period. Every figure has been cross-referenced against supplier invoices, delivery receipts, and beneficiary sign-off sheets maintained by our field accounting team in Gaza.
+    </p>
+
+    <div class="breakdown-wrap">
+        <table class="breakdown-table">
+            <thead>
+                <tr>
+                    <th style="width: 32%;">Category</th>
+                    <th style="width: 38%;">Details &amp; Metrics</th>
+                    <th style="width: 15%; text-align: right;">Amount (USD)</th>
+                    <th style="width: 15%; text-align: right;">Share</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cat-name">Emergency Food Parcels</div>
+                        <div class="cat-desc">Rice, lentils, oil, canned fish, dates, flour</div>
+                    </td>
+                    <td class="cat-desc">14,200 family parcels distributed &middot; avg. 42 kg each &middot; 4,260 meals/day</td>
+                    <td class="amount">$124,800</td>
+                    <td class="pct">25.6%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Infant &amp; Child Nutrition</div>
+                        <div class="cat-desc">Formula, ready-to-use therapeutic food (RUTF), high-energy biscuits</div>
+                    </td>
+                    <td class="cat-desc">3,840 infants supported &middot; 8,200 RUTF sachets &middot; 1,150 biscuit cartons</td>
+                    <td class="amount">$38,200</td>
+                    <td class="pct">7.8%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Fresh Bread &amp; Produce</div>
+                        <div class="cat-desc">Local bakery partnerships &middot; fresh vegetables &middot; dairy</div>
+                    </td>
+                    <td class="cat-desc">2 local bakeries contracted &middot; 28,000 flatbread units &middot; 6,200 vegetable baskets</td>
+                    <td class="amount">$19,250</td>
+                    <td class="pct">3.9%</td>
+                </tr>
+                <tr style="background: var(--surface-warm);">
+                    <td colspan="2" style="font-weight: 600; color: var(--text);">Subtotal — Food Security &amp; Nutrition</td>
+                    <td class="amount" style="font-weight: 700;">$182,250</td>
+                    <td class="pct" style="font-weight: 700;">37.4%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Surgical &amp; Trauma Kits</div>
+                        <div class="cat-desc">Sterile instrument sets, sutures, hemostatic gauze, chest drains</div>
+                    </td>
+                    <td class="cat-desc">680 surgical kits delivered &middot; 3 partner hospitals &middot; 145 emergency surgeries supported</td>
+                    <td class="amount">$58,400</td>
+                    <td class="pct">12.0%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Mobile Clinic Operations</div>
+                        <div class="cat-desc">2 mobile clinics &middot; fuel, staff, medications, medical supplies</div>
+                    </td>
+                    <td class="cat-desc">2,840 patient consultations &middot; 410 wound dressings &middot; 180 minor surgeries</td>
+                    <td class="amount">$34,200</td>
+                    <td class="pct">7.0%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Pharmaceuticals &amp; Vaccines</div>
+                        <div class="cat-desc">Antibiotics, analgesics, IV fluids, pediatric vaccines, insulin</div>
+                    </td>
+                    <td class="cat-desc">12,800 antibiotic courses &middot; 4,600 IV fluid bags &middot; 920 insulin vials</td>
+                    <td class="amount">$29,240</td>
+                    <td class="pct">6.0%</td>
+                </tr>
+                <tr style="background: var(--surface-warm);">
+                    <td colspan="2" style="font-weight: 600; color: var(--text);">Subtotal — Emergency Medical Aid</td>
+                    <td class="amount" style="font-weight: 700;">$121,840</td>
+                    <td class="pct" style="font-weight: 700;">25.0%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Temporary Shelter Units</div>
+                        <div class="cat-desc">Weather-resistant tents, steel frames, tarpaulins, flooring</div>
+                    </td>
+                    <td class="cat-desc">340 shelter units erected &middot; avg. 5 persons/unit &middot; 1,700 people housed</td>
+                    <td class="amount">$54,400</td>
+                    <td class="pct">11.2%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Thermal &amp; Household Kits</div>
+                        <div class="cat-desc">Blankets, sleeping mats, hygiene kits, solar lanterns</div>
+                    </td>
+                    <td class="cat-desc">2,800 thermal blankets &middot; 1,950 hygiene kits &middot; 1,200 solar lanterns</td>
+                    <td class="amount">$28,600</td>
+                    <td class="pct">5.9%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Orphan Support Program</div>
+                        <div class="cat-desc">Safe housing, psychosocial care, education materials, stipends</div>
+                    </td>
+                    <td class="cat-desc">420 children enrolled &middot; 18 safe houses &middot; 12 trained counselors</td>
+                    <td class="amount">$14,470</td>
+                    <td class="pct">3.0%</td>
+                </tr>
+                <tr style="background: var(--surface-warm);">
+                    <td colspan="2" style="font-weight: 600; color: var(--text);">Subtotal — Shelter &amp; NFI</td>
+                    <td class="amount" style="font-weight: 700;">$97,470</td>
+                    <td class="pct" style="font-weight: 700;">20.0%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Fleet Fuel &amp; Transport</div>
+                        <div class="cat-desc">Diesel for 12-truck fleet &middot; local transport contracts &middot; border crossing fees</div>
+                    </td>
+                    <td class="cat-desc">48,200 liters diesel consumed &middot; 312 delivery runs &middot; 186 border crossings</td>
+                    <td class="amount">$42,100</td>
+                    <td class="pct">8.6%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Warehousing &amp; Security</div>
+                        <div class="cat-desc">Rafah &amp; Deir al-Balah storage &middot; armed escort coordination &middot; insurance</div>
+                    </td>
+                    <td class="cat-desc">2 warehouses leased &middot; 24/7 security detail &middot; cargo insurance coverage</td>
+                    <td class="amount">$24,300</td>
+                    <td class="pct">5.0%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cat-name">Communications &amp; Coordination</div>
+                        <div class="cat-desc">Satellite comms, GPS tracking, field coordination salaries, reporting</div>
+                    </td>
+                    <td class="cat-desc">8 field coordinators &middot; satellite uplink terminals &middot; real-time GPS fleet tracking</td>
+                    <td class="amount">$19,390</td>
+                    <td class="pct">4.0%</td>
+                </tr>
+                <tr style="background: var(--surface-warm);">
+                    <td colspan="2" style="font-weight: 600; color: var(--text);">Subtotal — Logistics &amp; Operations</td>
+                    <td class="amount" style="font-weight: 700;">$85,790</td>
+                    <td class="pct" style="font-weight: 700;">17.6%</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="2">Grand Total — All Expenditures</td>
+                    <td class="amount">$487,350</td>
+                    <td class="pct">100.0%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>
+        Of the total funds raised, <span class="highlight-num">$487,350</span> has been fully disbursed. There was no remaining unallocated balance at the close of the reporting period. However, it is worth noting that an additional <span class="highlight-num">$12,400</span> carried over from June 2026 was utilized during the first week of July to pre-position fuel reserves and secure warehouse space ahead of the Ramadan distribution surge. This rollover was approved by the Board Finance Committee on June 28, 2026, and is documented in Addendum A of this report. All procurement was conducted through competitive bidding with pre-qualified vendors, and every delivery was photographed, geo-tagged, and cross-checked against beneficiary registration rolls by our independent monitoring partner, Veritas Field Analytics.
+    </p>
+
+
+<!-- ════════════════════════════════════════
+     BODY — PARAGRAPH 3
+     Forward Look & Encouragement
+     ════════════════════════════════════════ -->
+    <div class="section-title" style="margin-top: 28px;">III. Forward Outlook &amp; Call to Action</div>
+
+    <p>
+        In the preceding month of June 2026, the Foundation raised <span class="highlight-num">$412,180</span> and delivered <span class="highlight-num">11,800</span> food parcels, <span class="highlight-num">520</span> medical kits, and shelter for <span class="highlight-num">290</span> families. The month-on-month growth of <span class="highlight-num">18.2%</span> in total donations reflects the growing trust of our donor community and the expanding visibility of our field operations. We are deeply grateful to every individual who has chosen to stand with us.
+    </p>
+
+    <p>
+        Looking ahead to August and September 2026, we have four critical initiatives on the horizon that require sustained funding. First, the <strong>Winter Preparedness Program</strong> will pre-position 800 additional thermal shelter kits and 5,000 winter clothing bundles before temperatures drop. Second, our <strong>Mobile Medical Expansion</strong> aims to deploy a third mobile clinic to northern Gaza, where access to healthcare remains severely constrained. Third, the <strong>School Reopening Support</strong> initiative will provide educational materials, temporary classroom tents, and psychosocial support to 1,200 children in time for the new academic year. Finally, our <strong>Water &amp; Sanitation</strong> project will install 24 portable water purification units and 180 family-level filtration systems in camps currently relying on untreated sources. The total projected budget for these programs is <span class="highlight-num">$640,000</span>, of which <span class="highlight-num">$198,000</span> has already been pledged by returning donors.
+    </p>
+
+    <p>
+        The need on the ground has never been more urgent, but neither has the opportunity to make a tangible difference. Every dollar you contribute goes directly into the hands of families who have lost everything except their dignity and their hope. We invite you to renew your support, increase your monthly pledge, or share our mission with someone who believes, as you do, that compassion is not a feeling but an action. Together, we are not merely responding to a crisis; we are rebuilding lives, one meal, one shelter, one child at a time.
+    </p>
+
+    <div class="info-box">
+        <p>
+            <strong>N.B. —</strong> This report is updated on the <strong>5th day of every month</strong> and published simultaneously on our Transparency Portal (portal.spreadlove.org) and distributed to all registered donors via encrypted email. Full scanned copies of supplier invoices, delivery manifests, and beneficiary sign-off sheets are available upon written request to <strong>transparency@spreadlove.org</strong>. We remain committed to absolute transparency in every dollar we steward.
+        </p>
+    </div>
+
+</div><!-- /report-body -->
+
+
+<!-- ════════════════════════════════════════
+     VERIFICATION & SIGNATURE
+     ════════════════════════════════════════ -->
+<div class="verification-block">
+    <div class="tampon-area">
+        <div class="tampon-seal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Verified<br/>Audit</span>
+        </div>
+        <div class="tampon-text">
+            <strong>Independent Verification:</strong> All figures in this report have been reviewed and verified by <strong>Grant Thornton LLP</strong> (Washington, DC office) under engagement reference <strong>GT-SLF-2026-08</strong>. The audit covered expenditure documentation, beneficiary records, and bank reconciliation for the period July 1–31, 2026. No material discrepancies were identified.
+        </div>
+    </div>
+
+    <div class="signature-block">
+        <div class="signature-line">Amara Khalid</div>
+        <div class="signature-name">Dr. Amara Khalid, Ph.D.</div>
+        <div class="signature-role">Executive Director</div>
+        <div class="signature-role">Spread Love Foundation</div>
+        <div class="signature-date">Signed: August 5, 2026 &middot; Washington, DC</div>
+    </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════ -->
+<div class="report-footer">
+    <div class="footer-left">Spread Love Foundation &middot; Monthly Report</div>
+    <div class="footer-right">Page <strong>1</strong> of <strong>1</strong> &nbsp;&middot;&nbsp; Ref: <strong>SLF-RPT-2026-008</strong></div>
+</div>
+
+</div><!-- /page -->
+
+</body>
+</html>

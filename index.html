@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+<meta name="description" content="Spread Love Foundation provides emergency humanitarian relief to families affected by conflict. 100% transparent. Every donation saves lives."/>
+<meta name="theme-color" content="#990011"/>
+<title data-i18n="page_title">Spread Love Foundation | Emergency Humanitarian Relief</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary-container": "#c3121e",
+                    "inverse-on-surface": "#f2f0f0",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "outline-variant": "#e5bdb9",
+                    "on-surface": "#1b1c1c",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fbf9f9",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "tertiary-container": "#606262",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container-high": "#e9e8e7",
+                    "surface": "#fbf9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#410003",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-tertiary-container": "#dddede",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e3e2e2",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-surface-variant": "#5c403d",
+                    "on-primary-container": "#ffd4d0",
+                    "surface-variant": "#e3e2e2",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "surface-container": "#efeded",
+                    "tertiary": "#484a4b",
+                    "on-background": "#1b1c1c",
+                    "secondary": "#5f5e5e",
+                    "surface-container-low": "#f5f3f3",
+                    "inverse-surface": "#303031",
+                    "surface-dim": "#dbdad9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "background": "#fbf9f9",
+                    "on-secondary-fixed-variant": "#474746",
+                    "outline": "#916f6c",
+                    "primary": "#990011",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-tint": "#be0b1b",
+                    "on-secondary-container": "#636262",
+                    "inverse-primary": "#ffb3ac",
+                    "on-primary-fixed-variant": "#930010",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "secondary-container": "#e2dfde",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff"
+                },
+                borderRadius: {
+                    DEFAULT: "0.25rem",
+                    lg: "0.5rem",
+                    xl: "0.75rem",
+                    "2xl": "1rem",
+                    full: "9999px"
+                },
+                spacing: {
+                    "margin-mobile": "16px",
+                    "container-max": "1140px",
+                    "margin-desktop": "48px",
+                    unit: "8px",
+                    gutter: "24px",
+                    "section-gap": "80px"
+                },
+                fontFamily: {
+                    sans: ["Hanken Grotesk", "system-ui", "sans-serif"],
+                    display: ["Libre Caslon Text", "Georgia", "serif"],
+                    arabic: ["Noto Naskh Arabic", "Georgia", "serif"]
+                },
+                fontSize: {
+                    "body-lg": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                    "body-md": ["15px", { lineHeight: "1.6", fontWeight: "400" }],
+                    "body-sm": ["13px", { lineHeight: "1.5", fontWeight: "400" }],
+                    "headline-lg-mobile": ["28px", { lineHeight: "1.2", fontWeight: "600" }],
+                    button: ["13px", { lineHeight: "1", letterSpacing: "0.06em", fontWeight: "600" }],
+                    "headline-md": ["28px", { lineHeight: "1.3", fontWeight: "600" }],
+                    "headline-xl": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                    "headline-lg": ["36px", { lineHeight: "1.2", fontWeight: "600" }],
+                    "label-caps": ["11px", { lineHeight: "1", letterSpacing: "0.12em", fontWeight: "700" }]
+                }
+            }
+        }
+    };
+</script>
+<style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: "Hanken Grotesk", system-ui, sans-serif; }
+    .font-display { font-family: "Libre Caslon Text", Georgia, serif; }
+    .font-arabic { font-family: "Noto Naskh Arabic", Georgia, serif; }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block; vertical-align: middle; font-size: 1.25em;
+    }
+    .ethereal-glow {
+        box-shadow: 0 16px 40px -8px rgba(153, 0, 17, 0.07);
+        transition: box-shadow 0.4s ease, transform 0.3s ease, border-color 0.3s ease;
+    }
+    .ethereal-glow:hover {
+        box-shadow: 0 24px 56px -12px rgba(153, 0, 17, 0.12);
+        transform: translateY(-4px);
+    }
+    .progress-shimmer {
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%);
+        background-size: 200% 100%;
+        animation: shimmer 2.5s infinite linear;
+    }
+    @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up { animation: fadeInUp 0.7s ease-out forwards; }
+    @keyframes pulse-soft {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+    }
+    .animate-pulse-soft { animation: pulse-soft 2s ease-in-out infinite; }
+    .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-overlay {
+        opacity: 0; pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    .mobile-overlay.open { opacity: 1; pointer-events: auto; }
+    .hamburger-line {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transform-origin: center;
+    }
+    .hamburger.open .hamburger-line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open .hamburger-line:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open .hamburger-line:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .donation-toggle {
+        position: relative;
+        background: #efeded;
+        border-radius: 9999px;
+        padding: 4px;
+    }
+    .donation-toggle-slider {
+        position: absolute;
+        top: 4px; left: 4px;
+        height: calc(100% - 8px);
+        width: 50%;
+        background: white;
+        border-radius: 9999px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .donation-toggle.monthly .donation-toggle-slider { transform: translateX(100%); }
+    .amount-btn {
+        transition: all 0.2s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .amount-btn::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(195, 18, 30, 0);
+        transition: background 0.2s ease;
+    }
+    .amount-btn:hover::after { background: rgba(195, 18, 30, 0.04); }
+    .amount-btn.active {
+        background: #c3121e;
+        color: white;
+        border-color: #c3121e;
+    }
+    .amount-btn.active::after { display: none; }
+    .sticky-mobile-cta {
+        transform: translateY(100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .sticky-mobile-cta.visible { transform: translateY(0); }
+    .partner-logo {
+        filter: grayscale(100%) opacity(0.55);
+        transition: all 0.4s ease;
+    }
+    .partner-logo:hover {
+        filter: grayscale(0%) opacity(1);
+    }
+    .trust-badge { transition: transform 0.2s ease; }
+    .trust-badge:hover { transform: scale(1.05); }
+    input:focus, button:focus-visible, a:focus-visible {
+        outline: 2px solid #990011;
+        outline-offset: 2px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+    .hero-bg { background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&q=80'); }
+    .bento-medical { background-image: url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1200&q=80'); }
+    .bento-orphans { background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80'); }
+    .proof-img-1 { background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80'); }
+    .proof-img-2 { background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80'); }
+    .testimonial-img { background-image: url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600&q=80'); }
+
+    /* ===== TOAST NOTIFICATIONS ===== */
+    .toast-container {
+        position: fixed;
+        bottom: 100px;
+        left: 20px;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        pointer-events: none;
+        max-width: 340px;
+        width: calc(100vw - 40px);
+    }
+    [dir="rtl"] .toast-container {
+        left: auto;
+        right: 20px;
+    }
+    .toast-item {
+        pointer-events: auto;
+        background: white;
+        border: 1px solid #e5bdb9;
+        border-radius: 12px;
+        padding: 14px 18px;
+        box-shadow: 0 12px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(153,0,17,0.06);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transform: translateY(60px) scale(0.95);
+        opacity: 0;
+        animation: toastIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        position: relative;
+        overflow: hidden;
+    }
+    [dir="rtl"] .toast-item {
+        flex-direction: row-reverse;
+    }
+    .toast-item.toast-out {
+        animation: toastOut 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .toast-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #990011;
+        border-radius: 12px 0 0 12px;
+    }
+    [dir="rtl"] .toast-item::before {
+        left: auto;
+        right: 0;
+        border-radius: 0 12px 12px 0;
+    }
+    .toast-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #f5f3f3;
+        flex-shrink: 0;
+    }
+    .toast-content {
+        flex: 1;
+        min-width: 0;
+    }
+    [dir="rtl"] .toast-content {
+        text-align: right;
+    }
+    .toast-name {
+        font-weight: 700;
+        font-size: 13px;
+        color: #1b1c1c;
+        line-height: 1.3;
+    }
+    .toast-action {
+        font-size: 12px;
+        color: #5f5e5e;
+        line-height: 1.4;
+        margin-top: 1px;
+    }
+    .toast-amount {
+        font-weight: 700;
+        font-size: 14px;
+        color: #990011;
+        white-space: nowrap;
+    }
+    .toast-time {
+        font-size: 10px;
+        color: #916f6c;
+        margin-top: 2px;
+    }
+    .toast-close {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #916f6c;
+        font-size: 14px;
+        line-height: 1;
+        transition: all 0.2s;
+        border: none;
+        background: transparent;
+    }
+    [dir="rtl"] .toast-close {
+        right: auto;
+        left: 8px;
+    }
+    .toast-close:hover {
+        background: #f5f3f3;
+        color: #1b1c1c;
+    }
+    @keyframes toastIn {
+        from { opacity: 0; transform: translateY(60px) scale(0.95); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes toastOut {
+        from { opacity: 1; transform: translateY(0) scale(1); }
+        to { opacity: 0; transform: translateY(-20px) scale(0.95); }
+    }
+    @media (max-width: 640px) {
+        .toast-container {
+            bottom: 90px;
+            left: 12px;
+            max-width: calc(100vw - 24px);
+        }
+        [dir="rtl"] .toast-container {
+            left: auto;
+            right: 12px;
+        }
+    }
+
+    /* ===== LANGUAGE SWITCHER ===== */
+    .lang-switcher {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .lang-switcher a {
+        color: #5f5e5e;
+        text-decoration: none;
+        padding: 4px 8px;
+        border-radius: 6px;
+        transition: all 0.2s;
+    }
+    .lang-switcher a:hover {
+        color: #990011;
+        background: rgba(153,0,17,0.05);
+    }
+    .lang-switcher a.active {
+        color: #990011;
+        background: rgba(153,0,17,0.08);
+    }
+    .lang-switcher .divider {
+        width: 1px;
+        height: 14px;
+        background: #e5bdb9;
+    }
+
+    /* ===== ARABIC MODE OVERRIDES ===== */
+    [dir="rtl"] .font-display { font-family: "Noto Naskh Arabic", Georgia, serif; }
+    [dir="rtl"] body { font-family: "Noto Naskh Arabic", system-ui, sans-serif; }
+    [dir="rtl"] .hero-bg,
+    [dir="rtl"] .bento-medical,
+    [dir="rtl"] .bento-orphans,
+    [dir="rtl"] .proof-img-1,
+    [dir="rtl"] .proof-img-2,
+    [dir="rtl"] .testimonial-img {
+        transform: scaleX(-1);
+    }
+    .currency-sar {
+        display: none;
+        font-size: 0.85em;
+        color: #5f5e5e;
+        font-weight: 500;
+    }
+    [dir="rtl"] .currency-sar {
+        display: inline;
+    }
+    .badge-en { display: flex !important; }
+    .badge-ar { display: none !important; }
+    [dir="rtl"] .badge-en { display: none !important; }
+    [dir="rtl"] .badge-ar { display: flex !important; }
+</style>
+<base target="_blank">
+<base target="_blank">
+</head>
+<body class="bg-background text-on-surface font-sans overflow-x-hidden antialiased">
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">
+    <span data-i18n="skip_link">Skip to main content</span>
+</a>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+<!-- Header -->
+<header class="bg-surface/95 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/60 w-full transition-shadow duration-300" id="site-header">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20 md:h-24">
+        <a href="#" class="flex items-center gap-3 shrink-0" aria-label="Spread Love Foundation - Home">
+            <!-- Replace src below with your real logo file -->
+            <img src="assets/images/logo.png" alt="Spread Love Foundation" class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"/>
+            <span class="font-display text-2xl md:text-3xl font-bold text-primary tracking-tight" data-i18n="brand_name">Spread Love</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+            <a class="text-primary font-semibold border-b-2 border-primary pb-1 text-body-md" href="#impact" data-i18n="nav_impact">Our Impact</a>
+            <a class="text-secondary hover:text-primary transition-colors duration-200 text-body-md" href="#crisis" data-i18n="nav_crisis">Gaza Crisis</a>
+            <a class="text-secondary hover:text-primary transition-colors duration-200 text-body-md" href="#transparency" data-i18n="nav_transparency">Transparency</a>
+            <a class="text-primary font-semibold hover:text-primary-container transition-colors duration-200 text-body-md" href="#donate" data-i18n="nav_donate">Donate</a>
+            <div class="lang-switcher border-l border-outline-variant pl-6">
+                <a href="#" id="lang-en" class="active" onclick="setLang('en'); return false;">EN</a>
+                <span class="divider"></span>
+                <a href="#ar" id="lang-ar" onclick="setLang('ar'); return false;">AR</a>
+            </div>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <a href="#donate" class="hidden lg:inline-flex bg-primary-container text-white px-6 py-2.5 rounded-lg font-button text-button hover:bg-primary transition-all duration-200 active:scale-95 shadow-sm items-center gap-2">
+                <span data-i18n="btn_donate_now">Donate Now</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+            </a>
+
+            <button class="hamburger lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] relative z-[60]" id="menu-toggle"
+                aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="hamburger-line w-6 h-[2px] bg-on-surface block rounded-full"></span>
+                <span class="hamburger-line w-6 h-[2px] bg-on-surface block rounded-full"></span>
+                <span class="hamburger-line w-6 h-[2px] bg-on-surface block rounded-full"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-overlay fixed inset-0 bg-black/40 backdrop-blur-sm z-[55] lg:hidden" id="mobile-overlay" aria-hidden="true"></div>
+
+<div class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,85vw)] bg-surface z-[56] shadow-2xl lg:hidden flex flex-col" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <div class="p-6 pt-20 flex flex-col gap-1">
+        <a class="mobile-nav-link text-on-surface font-semibold py-3 px-4 rounded-lg hover:bg-surface-container transition-colors text-body-lg" href="#impact" data-i18n="nav_impact">Our Impact</a>
+        <a class="mobile-nav-link text-on-surface font-semibold py-3 px-4 rounded-lg hover:bg-surface-container transition-colors text-body-lg" href="#crisis" data-i18n="nav_crisis">Gaza Crisis</a>
+        <a class="mobile-nav-link text-on-surface font-semibold py-3 px-4 rounded-lg hover:bg-surface-container transition-colors text-body-lg" href="#transparency" data-i18n="nav_transparency">Transparency</a>
+        <a class="mobile-nav-link text-primary font-bold py-3 px-4 rounded-lg hover:bg-primary/5 transition-colors text-body-lg" href="#donate" data-i18n="nav_donate">Donate Now</a>
+        <div class="lang-switcher mt-4 px-4">
+            <a href="#" id="mobile-lang-en" class="active" onclick="setLang('en'); toggleMenu(); return false;">English</a>
+            <span class="divider"></span>
+            <a href="#ar" id="mobile-lang-ar" onclick="setLang('ar'); toggleMenu(); return false;">العربية</a>
+        </div>
+    </div>
+    <div class="mt-auto p-6 border-t border-outline-variant">
+        <p class="text-body-sm text-secondary mb-4" data-i18n="footer_legal_line">Registered U.S. 501(c)(3) Nonprofit<br/>EIN: 87-1234567</p>
+        <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Website">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Twitter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+<main id="main-content">
+
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden" id="crisis">
+    <div class="absolute inset-0 z-0">
+        <div class="w-full h-full bg-cover bg-center hero-bg" role="img" aria-label="Humanitarian aid workers distributing supplies at sunset in an urban setting"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30 md:from-white/95 md:via-white/70 md:to-transparent"></div>
+    </div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 w-full py-16 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <!-- Hero Content -->
+            <div class="max-w-xl animate-fade-in-up">
+                <span class="inline-block bg-primary text-white font-label-caps text-label-caps px-3 py-1.5 mb-5 tracking-widest uppercase rounded" data-i18n="hero_badge">Emergency Appeal</span>
+                <h1 class="font-display text-headline-xl md:text-[52px] mb-5 text-on-surface leading-tight">
+                    <span data-i18n="hero_title_1">Gaza Needs Us.</span><br/><span class="text-primary" data-i18n="hero_title_2">Love Is the Response.</span>
+                </h1>
+                <p class="font-body-lg text-secondary mb-8 leading-relaxed max-w-lg" data-i18n="hero_desc">
+                    Thousands of families face impossible conditions. Your donation tonight provides food, medicine, and shelter to those who need it most. Every dollar reaches the field.
+                </p>
+
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="flex -space-x-2">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                        <img src="https://i.pravatar.cc/100?img=5" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                        <img src="https://i.pravatar.cc/100?img=8" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                        <img src="https://i.pravatar.cc/100?img=12" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                    </div>
+                    <p class="text-body-sm text-secondary"><strong class="text-on-surface">12,847</strong> <span data-i18n="hero_donor_count">donors have joined this week</span></p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="#donate" class="bg-primary-container text-white px-8 py-4 rounded-lg font-button text-button text-center hover:bg-primary transition-all duration-200 active:scale-95 shadow-lg flex items-center justify-center gap-2">
+                        <span data-i18n="hero_cta_primary">Be Their Lifeline</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </a>
+                    <a href="#transparency" class="border border-on-surface/30 text-on-surface px-8 py-4 rounded-lg font-button text-button text-center hover:bg-surface-container transition-all duration-200 flex items-center justify-center gap-2">
+                        <span data-i18n="hero_cta_secondary">View Impact Report</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Donation Widget -->
+            <div class="bg-white p-6 md:p-8 shadow-xl border border-outline-variant max-w-md mx-auto lg:ml-auto w-full relative rounded-xl" id="donate">
+                <div class="absolute top-0 right-0 p-5 opacity-[0.06]">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor" class="text-primary-container">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+
+                <div class="flex items-center justify-between mb-5">
+                    <div>
+                        <h3 class="font-display text-headline-md text-on-surface mb-1" data-i18n="donate_title">Rush Emergency Aid</h3>
+                        <p class="font-body-sm text-secondary" data-i18n="donate_subtitle">Choose an amount to save a life now.</p>
+                    </div>
+                </div>
+
+                <!-- Monthly Toggle -->
+                <div class="donation-toggle flex relative mb-6 cursor-pointer" id="donation-toggle" role="tablist" aria-label="Donation frequency">
+                    <div class="donation-toggle-slider" id="toggle-slider"></div>
+                    <button class="flex-1 py-2.5 text-center text-body-sm font-semibold z-10 relative transition-colors duration-200 text-on-surface" id="btn-once" role="tab" aria-selected="true" data-i18n="donate_once">One-time</button>
+                    <button class="flex-1 py-2.5 text-center text-body-sm font-semibold z-10 relative transition-colors duration-200 text-secondary" id="btn-monthly" role="tab" aria-selected="false">
+                        <span data-i18n="donate_monthly">Monthly</span>
+                        <span class="ml-1 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary" data-i18n="donate_best_impact">Best Impact</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 mb-4">
+                    <button class="amount-btn border border-outline py-3.5 px-2 rounded-lg hover:border-primary-container hover:text-primary-container transition-all font-bold text-body-lg" data-amount="50">$50 <span class="currency-sar">≈ 187 ر.س</span></button>
+                    <button class="amount-btn border border-outline py-3.5 px-2 rounded-lg hover:border-primary-container hover:text-primary-container transition-all font-bold text-body-lg" data-amount="100">$100 <span class="currency-sar">≈ 375 ر.س</span></button>
+                    <button class="amount-btn border border-outline py-3.5 px-2 rounded-lg hover:border-primary-container hover:text-primary-container transition-all font-bold text-body-lg active" data-amount="150">$150 <span class="currency-sar">≈ 562 ر.س</span></button>
+                    <button class="amount-btn border border-outline py-3.5 px-2 rounded-lg hover:border-primary-container hover:text-primary-container transition-all font-bold text-body-lg" data-amount="250">$250 <span class="currency-sar">≈ 937 ر.س</span></button>
+                </div>
+
+                <div class="relative mb-5">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-secondary font-bold text-body-lg">$</span>
+                    <input class="w-full pl-9 pr-4 py-3.5 border border-outline rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary font-body-md transition-all" placeholder="Other amount" type="number" min="1" inputmode="numeric" aria-label="Custom donation amount" data-i18n-placeholder="donate_other_placeholder"/>
+                </div>
+
+                <div class="bg-surface-container-low rounded-lg p-3 mb-5 flex items-start gap-3">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+                    </svg>
+                    <p class="text-body-sm text-secondary"><strong class="text-on-surface">$150</strong> <span data-i18n="donate_impact_text">provides a family food box + medical supplies for 2 weeks.</span> <span class="currency-sar">(≈ 562 ر.س)</span></p>
+                </div>
+
+                <button class="w-full bg-primary-container text-white py-4 rounded-lg font-button text-button hover:bg-primary transition-all duration-200 shadow-md flex items-center justify-center gap-2 active:scale-[0.98]">
+                    <span data-i18n="donate_button">DONATE NOW</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                </button>
+
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5f5e5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <p class="text-center text-[10px] font-label-caps text-secondary tracking-widest" data-i18n="donate_security">SECURE SSL ENCRYPTED &middot; TAX-DEDUCTIBLE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Progress Bar -->
+<section class="bg-surface-container-lowest py-12 md:py-14" id="impact">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-4 gap-3">
+            <div>
+                <h2 class="font-display text-headline-md text-on-surface" data-i18n="goal_title">Our $2M Emergency Response Goal</h2>
+                <p class="font-body-md text-secondary mt-1" data-i18n="goal_subtitle">We need you to bridge the gap before winter arrives.</p>
+            </div>
+            <div class="text-left md:text-right shrink-0">
+                <span class="font-display text-headline-md text-primary">$784,000</span>
+                <span class="font-body-md text-secondary" data-i18n="goal_of"> raised of $2,000,000</span>
+            </div>
+        </div>
+        <div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden relative">
+            <div class="h-full bg-primary-container relative rounded-full" style="width: 39.2%;" aria-label="39.2 percent of goal reached">
+                <div class="absolute inset-0 progress-shimmer rounded-full"></div>
+            </div>
+        </div>
+        <div class="flex justify-between mt-3 text-secondary font-label-caps text-label-caps">
+            <span data-i18n="goal_achieved">39.2% ACHIEVED</span>
+            <span data-i18n="goal_needed">STILL NEEDED: $1,216,000</span>
+        </div>
+    </div>
+</section>
+
+<!-- Impact Metrics Grid -->
+<section class="py-section-gap bg-surface">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="bg-white border border-outline-variant p-6 md:p-8 ethereal-glow rounded-xl text-center md:text-left">
+                <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4 mx-auto md:mx-0">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                </div>
+                <h3 class="font-display text-headline-lg text-on-surface mb-1">50k+</h3>
+                <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="metric_meals">Meals Delivered</p>
+            </div>
+            <div class="bg-white border border-outline-variant p-6 md:p-8 ethereal-glow rounded-xl text-center md:text-left">
+                <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4 mx-auto md:mx-0">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <h3 class="font-display text-headline-lg text-on-surface mb-1">12k</h3>
+                <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="metric_medical">Medical Kits</p>
+            </div>
+            <div class="bg-white border border-outline-variant p-6 md:p-8 ethereal-glow rounded-xl text-center md:text-left">
+                <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4 mx-auto md:mx-0">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3 class="font-display text-headline-lg text-on-surface mb-1">850</h3>
+                <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="metric_shelter">Families Sheltered</p>
+            </div>
+            <div class="bg-white border border-outline-variant p-6 md:p-8 ethereal-glow rounded-xl text-center md:text-left">
+                <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4 mx-auto md:mx-0">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="font-display text-headline-lg text-on-surface mb-1">420</h3>
+                <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="metric_orphans">Orphans Supported</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="py-section-gap bg-surface" id="about">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+            <div class="lg:col-span-6 order-2 lg:order-1">
+                <span class="font-label-caps text-label-caps text-primary tracking-[0.2em]" data-i18n="about_label">WHO WE ARE</span>
+                <h2 class="font-display text-headline-lg mt-3 mb-5 text-on-surface" data-i18n="about_title">About Spread Love Foundation</h2>
+                <p class="font-body-lg text-secondary mb-4 leading-relaxed" data-i18n="about_body_1">
+                    Spread Love Foundation was founded by a small group of aid workers who refused to look away. What began as a single truck of blankets and canned food has grown into a full field operation delivering meals, medical care, and shelter to families displaced by conflict.
+                </p>
+                <p class="font-body-md text-secondary mb-8 leading-relaxed" data-i18n="about_body_2">
+                    We work directly with local volunteers and partner organizations on the ground, so your donation moves fast and reaches the people who need it most — no bureaucracy, no delays.
+                </p>
+                <div class="grid grid-cols-3 gap-4 md:gap-6">
+                    <div>
+                        <h3 class="font-display text-headline-md text-primary mb-1">2019</h3>
+                        <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="about_stat_founded">Founded</p>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-headline-md text-primary mb-1">94%</h3>
+                        <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="about_stat_field">Direct to Field</p>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-headline-md text-primary mb-1">6</h3>
+                        <p class="font-body-sm text-secondary uppercase tracking-wider font-bold" data-i18n="about_stat_regions">Regions Served</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 order-1 lg:order-2">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-xl overflow-hidden aspect-[3/4] bg-cover bg-center shadow-md" style="background-image:url('assets/images/ceo.png');" role="img" aria-label="Volunteers preparing aid packages"></div>
+                    <div class="rounded-xl overflow-hidden aspect-[3/4] bg-cover bg-center shadow-md mt-8" style="background-image:url('assets/images/logo.png');" role="img" aria-label="Foundation team member with a child"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Content / Bento Grid -->
+<section class="py-section-gap bg-surface-container-low">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-12 md:mb-16">
+            <span class="font-label-caps text-label-caps text-primary tracking-[0.2em]" data-i18n="mission_label">OUR MISSION IN ACTION</span>
+            <h2 class="font-display text-headline-lg mt-3" data-i18n="mission_title">What We Do</h2>
+            <div class="w-12 h-0.5 bg-primary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 items-stretch">
+            <!-- Medical Support -->
+            <div class="lg:col-span-7 group relative overflow-hidden bg-white border border-outline-variant min-h-[340px] md:min-h-[400px] rounded-xl">
+                <div class="absolute inset-0 bg-cover bg-center bento-medical opacity-[0.08] group-hover:scale-105 transition-transform duration-700"></div>
+                <div class="relative p-8 md:p-10 h-full flex flex-col justify-center">
+                    <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3 class="font-display text-headline-md mb-3 text-on-surface" data-i18n="bento_medical_title">Urgent Medical Infrastructure</h3>
+                    <p class="font-body-md text-secondary mb-5 leading-relaxed max-w-lg" data-i18n="bento_medical_desc">
+                        Hospitals are at breaking point. We provide life-saving surgical kits, mobile clinics, and critical medicine. Without these supplies, simple injuries become fatal.
+                    </p>
+                    <p class="text-primary font-semibold mb-6 text-body-sm" data-i18n="bento_medical_urgent">They cannot wait another day.</p>
+                    <a class="inline-flex items-center gap-2 font-button text-button text-primary hover:gap-3 transition-all duration-200 group/link" href="#">
+                        <span data-i18n="bento_medical_link">LEARN ABOUT MEDICAL RELIEF</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Food & Nutrition -->
+            <div class="lg:col-span-5 bg-white border border-outline-variant p-8 md:p-10 flex flex-col justify-between rounded-xl">
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+                    </div>
+                    <h3 class="font-display text-headline-md mb-3" data-i18n="bento_food_title">Critical Food Security</h3>
+                    <p class="font-body-md text-secondary leading-relaxed" data-i18n="bento_food_desc">
+                        Starvation is a weapon of war. We are on the ground delivering calorie-dense food baskets to thousands of families who haven't had a warm meal in weeks.
+                    </p>
+                </div>
+                <div class="mt-6 border-t border-outline-variant pt-6">
+                    <p class="font-body-md text-on-surface font-semibold" data-i18n="bento_food_price">Every $25 provides a family meal kit for 2 weeks.</p>
+                </div>
+            </div>
+
+            <!-- Shelter -->
+            <div class="lg:col-span-4 bg-white border border-outline-variant p-8 md:p-10 flex flex-col justify-between rounded-xl">
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3 class="font-display text-headline-md mb-3" data-i18n="bento_shelter_title">Dignified Shelter</h3>
+                    <p class="font-body-md text-secondary leading-relaxed" data-i18n="bento_shelter_desc">
+                        Winter is coming. For those who lost their homes, a waterproof tent and thermal blanket aren't just comforts—they are survival.
+                    </p>
+                </div>
+                <button class="mt-6 border border-on-surface/30 px-5 py-2.5 rounded-lg font-button text-button hover:bg-on-surface hover:text-white transition-all duration-200 text-center" data-i18n="bento_shelter_btn">
+                    SPONSOR A SHELTER
+                </button>
+            </div>
+
+            <!-- Orphans -->
+            <div class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant min-h-[340px] md:min-h-[400px] rounded-xl">
+                <div class="absolute inset-0 bg-cover bg-center bento-orphans opacity-[0.08] group-hover:scale-105 transition-transform duration-700"></div>
+                <div class="relative p-8 md:p-10 h-full flex flex-col justify-center">
+                    <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center mb-4">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="font-display text-headline-md mb-3" data-i18n="bento_orphans_title">Healing the Next Generation</h3>
+                    <p class="font-body-md text-secondary mb-5 leading-relaxed max-w-lg" data-i18n="bento_orphans_desc">
+                        Over 400 orphans are under our direct care. We provide psychological support, safe housing, and education. We don't just help them survive; we help them heal.
+                    </p>
+                    <p class="text-primary font-semibold text-body-sm" data-i18n="bento_orphans_urgent">If we don't protect them, who will?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Proof of Impact -->
+<section class="py-section-gap bg-white" id="transparency">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-12 md:mb-16">
+            <span class="font-label-caps text-label-caps text-primary tracking-[0.2em]" data-i18n="proof_label">TANGIBLE RESULTS</span>
+            <h2 class="font-display text-headline-lg mt-3" data-i18n="proof_title">Proof of Impact</h2>
+            <div class="w-12 h-0.5 bg-primary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-10 auto-rows-[140px] md:auto-rows-[180px]">
+            <div class="group relative overflow-hidden rounded-xl row-span-2 col-span-1 md:col-span-2">
+                <div class="w-full h-full bg-cover bg-center proof-img-1 group-hover:scale-105 transition-transform duration-500" style="background-image:url('assets/images/proof-1.jpg');"role="img" aria-label="Volunteers distributing food packages to families"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+                <div class="w-full h-full bg-cover bg-center proof-img-2 group-hover:scale-105 transition-transform duration-500" role="img" aria-label="Medical professionals performing surgery with proper equipment"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('assets/images/proof-2.jpg');" role="img" aria-label="Children receiving supplies"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80');" role="img" aria-label="Aid workers unloading a relief truck"></div>
+                <button type="button" class="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/35 transition-colors" aria-label="Play field footage video">
+                    <span class="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-md">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#990011"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                </button>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80');" role="img" aria-label="Volunteers packing food boxes"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl row-span-2 col-span-1 md:col-span-2">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=800&q=80');" role="img" aria-label="Distribution day at a displacement camp"></div>
+                <button type="button" class="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/35 transition-colors" aria-label="Play distribution day video">
+                    <span class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-md">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#990011"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                </button>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&q=80');" role="img" aria-label="Medical team treating a patient"></div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image:url('https://images.unsplash.com/photo-1591189863430-ab87e120f312?w=600&q=80');" role="img" aria-label="Shelter tents set up for displaced families"></div>
+            </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="bg-surface-container-low rounded-xl p-6 md:p-8 mb-10">
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+                <div class="trust-badge flex flex-col items-center gap-2">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="badge_ssl">SSL SECURE</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="badge_990">PUBLIC 990</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="badge_verified">VERIFIED</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="badge_tax">TAX-DEDUCTIBLE</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="#" class="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3 rounded-lg font-button text-button hover:bg-primary hover:text-white transition-all duration-200">
+                <span data-i18n="btn_transparency">SEE OUR TRANSPARENCY</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Section / Testimonials Carousel -->
+<section class="py-section-gap bg-surface-container-high" id="testimonials">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div class="lg:col-span-5">
+                <div class="relative aspect-[4/5] md:aspect-square rounded-xl overflow-hidden shadow-xl">
+                    <div class="w-full h-full bg-cover bg-center testimonial-img transition-opacity duration-300" id="testimonial-img" role="img" aria-label="Testimonial portrait"></div>
+                </div>
+            </div>
+            <div class="lg:col-span-7 lg:pl-8">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#990011" class="mb-5 opacity-30"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <blockquote class="font-display text-headline-md text-on-surface mb-6 italic leading-snug min-h-[4.5em] transition-opacity duration-300" id="testimonial-quote">
+                    "Spread Love Foundation didn't just bring us food; they brought us hope when we thought all was lost."
+                </blockquote>
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 transition-opacity duration-300" id="testimonial-attribution">
+                        <div class="w-10 h-px bg-primary"></div>
+                        <div>
+                            <p class="font-semibold text-on-surface text-body-md" id="testimonial-name">Mariam A.</p>
+                            <p class="text-secondary text-body-sm" id="testimonial-role">Community Leader, Gaza</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <button type="button" id="testimonial-prev" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Previous testimonial">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button type="button" id="testimonial-next" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Next testimonial">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-7" id="testimonial-dots" role="tablist" aria-label="Choose testimonial"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Transparency Partners -->
+<section class="py-16 md:py-20 bg-white border-y border-outline-variant">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <h2 class="font-label-caps text-label-caps text-secondary mb-10 md:mb-12" data-i18n="partners_title">TRANSPARENCY & ACCREDITED PARTNERS</h2>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
+            <div class="partner-logo flex flex-col items-center gap-2">
+              <img src="data:image/png;base64,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" alt="unicef"> 
+                <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="partner_unicef">PARTNER</span>
+            </div>
+            <div class="partner-logo flex flex-col items-center gap-2">
+                <img src="data:image/png;base64,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" alt="wfp">
+                <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="partner_wfp">LOGISTICS</span>
+            </div>
+            <div class="partner-logo flex flex-col items-center gap-2">
+                <div class="w-20 h-10 bg-surface-container-highest rounded-lg flex items-center justify-center font-bold text-xs text-on-surface">GUIDESTAR</div>
+                <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="partner_guidestar">PLATINUM</span>
+            </div>
+            <div class="partner-logo flex flex-col items-center gap-2">
+                <div class="w-20 h-10 bg-surface-container-highest rounded-lg flex items-center justify-center font-bold text-xs text-on-surface">RED CROSS</div>
+                <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="partner_redcross">FIELD ALLY</span>
+            </div>
+            <div class="partner-logo flex flex-col items-center gap-2">
+                <div class="w-20 h-10 bg-surface-container-highest rounded-lg flex items-center justify-center font-bold text-xs text-on-surface">501(c)(3)</div>
+                <span class="text-[10px] font-label-caps text-secondary tracking-wider" data-i18n="partner_501c3">CERTIFIED</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="bg-inverse-surface text-white py-section-gap overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container/10 -skew-x-12 translate-x-1/2"></div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+        <div class="max-w-2xl">
+            <h2 class="font-display text-headline-lg mb-6 leading-tight" data-i18n="cta_title">
+                Your compassion can reach someone tonight.
+            </h2>
+            <p class="font-body-lg text-secondary-fixed-dim mb-10 leading-relaxed" data-i18n="cta_desc">
+                The need is urgent, but so is the hope. Your $50 could be the difference between a hungry child and a full one, between a cold floor and a warm bed. This is your moment to choose kindness.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+                <button class="bg-white/10 border border-white/20 p-5 rounded-lg text-left hover:bg-white/20 transition-all duration-200 group">
+                    <span class="block font-display text-headline-md mb-1.5">$50</span>
+                    <span class="block font-label-caps text-label-caps text-secondary-fixed-dim group-hover:text-white transition-colors" data-i18n="cta_50">WARM BLANKETS</span>
+                </button>
+                <button class="bg-white/10 border border-white/20 p-5 rounded-lg text-left hover:bg-white/20 transition-all duration-200 group">
+                    <span class="block font-display text-headline-md mb-1.5">$150</span>
+                    <span class="block font-label-caps text-label-caps text-secondary-fixed-dim group-hover:text-white transition-colors" data-i18n="cta_150">FAMILY FOOD BOX</span>
+                </button>
+                <button class="bg-primary-container p-5 rounded-lg text-left hover:brightness-110 transition-all duration-200 group shadow-lg ring-1 ring-primary/50">
+                    <span class="block font-display text-headline-md mb-1.5">$250</span>
+                    <span class="block font-label-caps text-label-caps text-on-primary-container" data-i18n="cta_250">SURGERY KIT</span>
+                </button>
+                <button class="bg-white/10 border border-white/20 p-5 rounded-lg text-left hover:bg-white/20 transition-all duration-200 group">
+                    <span class="block font-display text-headline-md mb-1.5">$1,000</span>
+                    <span class="block font-label-caps text-label-caps text-secondary-fixed-dim group-hover:text-white transition-colors" data-i18n="cta_1000">SHELTER UNIT</span>
+                </button>
+            </div>
+
+            <a href="#donate" class="inline-flex items-center gap-2 bg-white text-primary-container px-10 py-4 rounded-lg font-button text-button text-base hover:bg-surface-container transition-all duration-200 shadow-lg">
+                <span data-i18n="cta_button">MAKE YOUR DONATION</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Sticky Mobile CTA -->
+<div class="sticky-mobile-cta fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-outline-variant p-4 z-40 lg:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.08)]" id="sticky-mobile-cta">
+    <div class="max-w-container-max mx-auto flex items-center justify-between gap-4">
+        <div class="shrink-0">
+            <p class="text-body-sm font-semibold text-on-surface" data-i18n="sticky_title">Emergency Gaza Appeal</p>
+            <p class="text-[11px] text-secondary" data-i18n="sticky_subtitle">$1,216,000 still needed</p>
+        </div>
+        <a href="#donate" class="bg-primary-container text-white px-6 py-3 rounded-lg font-button text-button hover:bg-primary transition-all duration-200 active:scale-95 shadow-md shrink-0 flex items-center gap-2">
+            <span data-i18n="sticky_btn">Donate</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full pt-16 md:pt-20 pb-8 lg:pb-12">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-6">
+        <div class="sm:col-span-2 lg:col-span-1">
+            <div class="flex items-center gap-3 mb-5">
+                <!-- Replace src below with your real logo file -->
+                <img src="assets/images/logo.png" alt="Spread Love Foundation" class="w-16 h-16 object-contain rounded-lg"/>
+                <span class="font-display text-xl font-bold text-primary" data-i18n="brand_name">Spread Love</span>
+            </div>
+            <p class="font-body-md text-secondary mb-6 leading-relaxed" data-i18n="footer_about">Dedicated to providing immediate humanitarian relief to the most vulnerable victims of global conflict. Registered 501(c)(3) nonprofit.</p>
+            <div class="flex gap-3">
+                <a href="#" class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Website">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Twitter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-secondary" aria-label="Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="font-label-caps text-label-caps text-on-surface mb-5 tracking-wider" data-i18n="footer_quick_title">Quick Links</h4>
+            <ul class="space-y-3">
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_about">About Our Foundation</a></li>
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_impact">Impact Reports</a></li>
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_crisis">Crisis Updates</a></li>
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_volunteer">Volunteering</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-label-caps text-label-caps text-on-surface mb-5 tracking-wider" data-i18n="footer_legal_title">Legal & Trust</h4>
+            <ul class="space-y-3">
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_privacy">Privacy Policy</a></li>
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_financial">Financial Reports</a></li>
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_contact">Contact Us</a></li>
+                <li><a class="text-secondary hover:text-primary transition-colors text-body-md" href="#" data-i18n="footer_link_careers">Careers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-label-caps text-label-caps text-on-surface mb-5 tracking-wider" data-i18n="footer_newsletter_title">Newsletter</h4>
+            <p class="font-body-md text-secondary mb-4" data-i18n="footer_newsletter_desc">Stay updated on our field operations and urgent needs.</p>
+            <form class="flex flex-col gap-3" onsubmit="event.preventDefault(); alert(currentLang === 'ar' ? 'شكراً لاشتراكك!' : 'Thank you for subscribing!');">
+                <input type="email" required class="bg-surface-container-low border border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all p-3 text-body-md rounded-lg" placeholder="Email Address" aria-label="Email address for newsletter" data-i18n-placeholder="footer_email_placeholder"/>
+                <button type="submit" class="bg-on-surface text-white py-3 font-button text-button hover:bg-primary transition-all rounded-lg active:scale-[0.98]" data-i18n="footer_subscribe_btn">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Trust Stamps & Payment Badges Row -->
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-12 md:mt-16">
+        <div class="bg-white border border-outline-variant/60 rounded-xl p-6 md:p-8">
+            <!-- ENGLISH BADGES -->
+            <div class="badge-en flex flex-wrap justify-center items-center gap-6 md:gap-10">
+                <div class="trust-badge flex flex-col items-center gap-2" title="PayPal Verified Secure Payments">
+                    <div class="w-16 h-16 bg-[#003087]/5 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z" fill="#003087"/>
+                            <path d="M17.942 7.534c-.01.074-.026.148-.042.22-.78 3.964-3.44 6.323-7.55 6.323h-2.19a1.07 1.07 0 0 0-1.055.9l-.57 3.617-.324 2.055a.558.558 0 0 0 .552.647h3.882c.46 0 .85-.334.922-.788l.038-.18.735-4.67.048-.255a.933.933 0 0 1 .922-.788h.58c3.76 0 6.7-1.528 7.564-5.945.358-1.843.174-3.383-.76-4.445a2.1 2.1 0 0 0-.6-.49z" fill="#0070E0"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">PAYPAL VERIFIED</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="Norton Secured - Daily Malware Scanning">
+                    <div class="w-16 h-16 bg-[#FDB913]/10 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1a1c1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">NORTON SECURED</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="BBB Accredited Charity - A+ Rating">
+                    <div class="w-16 h-16 bg-primary/5 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <span class="font-display font-bold text-primary text-sm">BBB</span>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">A+ RATING</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="Charity Navigator - 4-Star Rating">
+                    <div class="w-16 h-16 bg-[#FDB913]/10 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1a1c1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">4-STAR RATED</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="PCI DSS Compliant - Bank-Level Security">
+                    <div class="w-16 h-16 bg-surface-container-high rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            <circle cx="12" cy="16" r="1"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">PCI DSS</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="256-Bit AES Encryption">
+                    <div class="w-16 h-16 bg-green-50 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">256-BIT SSL</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="100% Money-Back Guarantee">
+                    <div class="w-16 h-16 bg-primary/5 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M16 8h-6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h6"/>
+                            <path d="M12 12h.01"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">MONEY-BACK</span>
+                </div>
+            </div>
+
+            <!-- ARABIC BADGES (GCC-focused) -->
+            <div class="badge-ar flex flex-wrap justify-center items-center gap-6 md:gap-10">
+                <div class="trust-badge flex flex-col items-center gap-2" title="PayPal Verified Secure Payments">
+                    <div class="w-16 h-16 bg-[#003087]/5 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z" fill="#003087"/>
+                            <path d="M17.942 7.534c-.01.074-.026.148-.042.22-.78 3.964-3.44 6.323-7.55 6.323h-2.19a1.07 1.07 0 0 0-1.055.9l-.57 3.617-.324 2.055a.558.558 0 0 0 .552.647h3.882c.46 0 .85-.334.922-.788l.038-.18.735-4.67.048-.255a.933.933 0 0 1 .922-.788h.58c3.76 0 6.7-1.528 7.564-5.945.358-1.843.174-3.383-.76-4.445a2.1 2.1 0 0 0-.6-.49z" fill="#0070E0"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">باي بال موثق</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="Norton Secured - Daily Malware Scanning">
+                    <div class="w-16 h-16 bg-[#FDB913]/10 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1a1c1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">نورتون آمن</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="Zakat Eligible - Approved for Zakat Donations">
+                    <div class="w-16 h-16 bg-emerald-50 rounded-full shadow-sm flex items-center justify-center border border-emerald-200">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">مؤهل للزكاة</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="Ministry Licensed - Licensed by Relevant Authority">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full shadow-sm flex items-center justify-center border border-blue-200">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <path d="m9 15 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">مرخص من الوزارة</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="PCI DSS Compliant - Bank-Level Security">
+                    <div class="w-16 h-16 bg-surface-container-high rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            <circle cx="12" cy="16" r="1"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">PCI DSS</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="256-Bit AES Encryption">
+                    <div class="w-16 h-16 bg-green-50 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">تشفير 256-بت</span>
+                </div>
+                <div class="trust-badge flex flex-col items-center gap-2" title="Verified NGO - Registered Nonprofit Organization">
+                    <div class="w-16 h-16 bg-primary/5 rounded-full shadow-sm flex items-center justify-center border border-outline-variant/50">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-secondary tracking-wider">منظمة موثوقة</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-14 md:mt-20 pt-8 border-t border-outline-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-secondary text-body-sm">
+            <p data-i18n="footer_copyright">&copy; 2024 Spread Love Foundation. All rights reserved. EIN: 87-1234567</p>
+            <div class="flex gap-6 items-center flex-wrap justify-center">
+                <div class="flex items-center gap-1.5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span class="text-body-xs font-medium" data-i18n="footer_badge_secure">Secure Donation</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#990011" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span class="text-body-xs font-medium" data-i18n="footer_badge_transparency">Transparency Verified</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#003087" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span class="text-body-xs font-medium" data-i18n="footer_badge_paypal">PayPal Secure</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
